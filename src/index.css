@@ -1,4 +1,14 @@
 
+@font-face {
+    font-family: 'font-default';
+    src: url('../public/assets/font/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'font-bold';
+    src: url('../public/assets/font/Poppins/Poppins-Bold.ttf');
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,4 +17,6 @@
 
 body {
     height: 100vh;
+    font-family: 'font-default', sans-serif;
+    background-color: #FAFAFA;
 }

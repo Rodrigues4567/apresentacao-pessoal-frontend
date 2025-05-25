@@ -1,0 +1,53 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+}
+
+.Home_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-family: 'font-bold', sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+.title h3 {
+    font-size: 2rem;
+}
+
+.title h2 {
+    font-size: 2.9rem;
+}
+
+.linha {
+    position: absolute;
+    left: 19%;
+    width: 378px;
+    background-color: #EA1F1F;
+    height: 2px;
+    border-radius: 20px;
+}
+
+span {
+    color: #EA1F1F;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.button_icon {
+    font-size: 1.4rem;
+}

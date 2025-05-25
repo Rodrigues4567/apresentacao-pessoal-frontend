@@ -1,0 +1,68 @@
+
+.container {
+    padding: 14px 10px;
+    background-color: #16213E;
+    border-bottom: 2px solid #EA1F1F;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 58px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    content: url('assets/ARed.png');
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    list-style: none;
+    color: #fff;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: #EA1F1F;
+    transition: 0.3s;
+}
+
+.menu_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.menu_icon {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+
+    .header_content {
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    ul {
+        display: none;
+    }
+    
+    .menu_button {
+        display: block;
+    }
+
+}

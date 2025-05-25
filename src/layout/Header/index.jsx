@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import { IoMenu } from "react-icons/io5";
 
 function Header() {
     return (
@@ -13,6 +14,8 @@ function Header() {
                     <li>Projetos</li>
                     <li>Contato</li>
                 </ul>
+
+                <button className={styles.menu_button}><IoMenu className={styles.menu_icon} /></button>
             </div>
 
         </div>
