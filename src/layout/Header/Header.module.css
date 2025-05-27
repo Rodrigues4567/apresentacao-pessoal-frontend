@@ -50,6 +50,13 @@ li:hover {
     color: #fff;
 }
 
+.menu_responsive {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 500px) {
 
     .header_content {
@@ -63,6 +70,20 @@ li:hover {
     
     .menu_button {
         display: block;
+    }
+
+    .menu_responsive.show {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .menu_responsive_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 10px 0;
     }
 
 }

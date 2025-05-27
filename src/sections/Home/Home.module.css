@@ -17,6 +17,7 @@
     position: relative;
     text-align: center;
     font-family: 'font-bold', sans-serif;
+    padding: 0px 5px;
     margin-bottom: 1.6rem;
 }
 
@@ -50,4 +51,28 @@ span {
 
 .button_icon {
     font-size: 1.4rem;
+}
+
+@media screen and (max-width: 550px) {
+
+    .title h3 {
+        font-size: 1.2rem;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .linha {
+        width: 260px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .linha {
+        width: 220px;
+    }
+
 }

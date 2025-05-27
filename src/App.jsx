@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './layout/Header';
+import AboutMe from './sections/AboutMe';
 import Home from './sections/Home';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Home />
+      <AboutMe />
     </>
   );
 }
