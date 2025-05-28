@@ -2,6 +2,8 @@
 .container {
     padding: 4rem 10px;
     background-color: #16213E;
+    border-bottom: 2px solid #EA1F1F;
+    border-top: 2px solid #EA1F1F;
 }
 
 .content {
@@ -32,4 +34,24 @@
 
 .button_icon {
     font-size: 1.4rem;
+}
+
+@media screen and (max-width: 650px) {
+
+    .content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about {
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
 }
