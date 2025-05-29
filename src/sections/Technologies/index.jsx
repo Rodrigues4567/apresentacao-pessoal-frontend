@@ -9,7 +9,9 @@ function Technologies() {
     return (
         <div className={styles.container}>
 
-            <h2>Tecnologias</h2>
+            <div className={styles.title}>
+                <h2>Tecnologias</h2>
+            </div>
 
             <div className={styles.cards}>
                 <Card icon={<FaHtml5 />} name={'HTML'} />

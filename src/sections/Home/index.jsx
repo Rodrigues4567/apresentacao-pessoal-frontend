@@ -10,7 +10,7 @@ function Home() {
                 <div className={styles.title}>
                     <h3>Olá, me chamo <span>Allyson Rodrigues</span></h3>
                     <h2>Desenvolvedor Front-End<span>.</span></h2>
-                    <div className={styles.linha}></div>
+                    <div className={styles.line}></div>
                 </div>
 
                 <div className={styles.buttons}>
