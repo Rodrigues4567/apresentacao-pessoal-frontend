@@ -1,0 +1,14 @@
+
+.container h2 {
+    font-family: 'font-bold', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    gap: 28px;
+    justify-content: center;
+}
