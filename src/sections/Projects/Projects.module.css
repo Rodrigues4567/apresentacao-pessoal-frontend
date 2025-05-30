@@ -1,0 +1,41 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title h2 {
+    text-align: center;
+    font-family: 'font-bold', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.swiper_container {
+    width: 1130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.swiper_slide {
+    padding-bottom: 2.6rem;
+}
+
+:global(.swiper-pagination-bullet) {
+  opacity: 0.5 !important;
+  border-radius: 50% !important;
+  margin: 0 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+:global(.swiper-pagination-bullet-active),
+:global(.swiper-pagination-bullet-active-main) {
+  background-color: #ea1f1f !important;
+  opacity: 1 !important;
+}

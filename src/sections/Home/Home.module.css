@@ -63,7 +63,7 @@ span {
         font-size: 2rem;
     }
 
-    .linha {
+    .line {
         width: 260px;
     }
 
@@ -71,7 +71,7 @@ span {
 
 @media screen and (max-width: 400px) {
 
-    .linha {
+    .line {
         width: 220px;
     }
 
