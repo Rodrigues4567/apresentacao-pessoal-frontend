@@ -18,7 +18,7 @@ function Projects() {
                 <Swiper
                     className={styles.swiper}
                     modules={[Pagination]}
-                    spaceBetween={26}
+                    spaceBetween={20}
                     slidesPerView={1}
                     loop={true}
                     pagination={{
@@ -29,42 +29,50 @@ function Projects() {
                         768: {
                             slidesPerView: 2
                         },
-                        1024: {
+                        1050: {
                             slidesPerView: 3
                         }
                     }}
                 >
 
                     <SwiperSlide className={styles.swiper_slide}>
-                        <CardProject img={'/assets/projeto-pokemon.png'} 
-                            text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
-                            urlDeploy={'https://pokemons-page.vercel.app/'} 
-                            urlRepository={'https://github.com/Rodrigues4567/pokemons-page'} 
-                        />
+                        <div className={styles.card_project}>
+                            <CardProject img={'/assets/projeto-pokemon.png'} 
+                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                urlDeploy={'https://pokemons-page.vercel.app/'} 
+                                urlRepository={'https://github.com/Rodrigues4567/pokemons-page'} 
+                            />
+                        </div>
                     </SwiperSlide>
 
                     <SwiperSlide className={styles.swiper_slide}>
-                        <CardProject img={'/assets/autmobile.jpg'} 
-                            text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
-                            urlDeploy={'https://rodrigues4567.github.io/Autmobile/'}
-                            urlRepository={'https://github.com/Rodrigues4567/Autmobile'}
-                        />
+                        <div className={styles.card_project}>
+                            <CardProject img={'/assets/autmobile.jpg'} 
+                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                urlDeploy={'https://rodrigues4567.github.io/Autmobile/'}
+                                urlRepository={'https://github.com/Rodrigues4567/Autmobile'}
+                            />
+                        </div>
                     </SwiperSlide>
 
                     <SwiperSlide className={styles.swiper_slide}>
-                        <CardProject img={'/assets/e-commerce.png'}
-                            text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
-                            urlDeploy={'https://rodrigues4567.github.io/teste-e-commerce-avanti/'}
-                            urlRepository={'https://github.com/Rodrigues4567/teste-e-commerce-avanti'} 
-                        />
+                        <div className={styles.card_project}>
+                            <CardProject img={'/assets/e-commerce.png'}
+                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                urlDeploy={'https://rodrigues4567.github.io/teste-e-commerce-avanti/'}
+                                urlRepository={'https://github.com/Rodrigues4567/teste-e-commerce-avanti'} 
+                            />
+                        </div>
                     </SwiperSlide>
 
                     <SwiperSlide className={styles.swiper_slide}>
-                        <CardProject img={'/assets/Whitepace.jpg'}
-                            text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
-                            urlDeploy={'https://rodrigues4567.github.io/projeto-whitepace/'}
-                            urlRepository={'https://github.com/Rodrigues4567/projeto-whitepace'} 
-                        />    
+                        <div className={styles.card_project}>
+                            <CardProject img={'/assets/Whitepace.jpg'}
+                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                urlDeploy={'https://rodrigues4567.github.io/projeto-whitepace/'}
+                                urlRepository={'https://github.com/Rodrigues4567/projeto-whitepace'} 
+                            />    
+                        </div>
                     </SwiperSlide>
 
                 </Swiper>

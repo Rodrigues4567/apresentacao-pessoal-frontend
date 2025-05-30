@@ -1,30 +1,36 @@
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .title h2 {
-    text-align: center;
-    font-family: 'font-bold', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: 'font-bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .swiper_container {
-    width: 1130px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 10px;
+  width: 100%;
+  max-width: 1130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper_slide {
-    padding-bottom: 2.6rem;
+  display: flex;
+  padding-bottom: 2.6rem;
+}
+
+.card_project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :global(.swiper-pagination-bullet) {
@@ -38,4 +44,12 @@
 :global(.swiper-pagination-bullet-active-main) {
   background-color: #ea1f1f !important;
   opacity: 1 !important;
+}
+
+@media screen and (max-width: 1100px) {
+
+  .swiper_container {
+    width: 95vw;
+  }
+
 }

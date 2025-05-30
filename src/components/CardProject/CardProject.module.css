@@ -26,3 +26,11 @@
     align-items: center;
     gap: 19px;
 }
+
+@media screen and (max-width: 500px) {
+
+    .card {
+        width: 335px;
+    }
+
+}

@@ -16,6 +16,7 @@
 
 .button_red:hover {
     transition: 0.4s;
+    background-color: #c41a1a;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
 }
 
