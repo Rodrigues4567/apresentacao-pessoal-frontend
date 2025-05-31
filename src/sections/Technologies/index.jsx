@@ -7,7 +7,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 function Technologies() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='technologies'>
 
             <div className={styles.title}>
                 <h2>Tecnologias</h2>

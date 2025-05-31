@@ -8,7 +8,7 @@ import 'swiper/css/pagination'
 
 function Projects() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='projects'>
 
             <div className={styles.title}>
                 <h2>Projetos</h2>

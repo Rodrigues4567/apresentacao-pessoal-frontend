@@ -1,0 +1,109 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.title h2 {
+    font-family: 'font-bold', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2.6rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+    padding: 0px 10px;
+}
+
+.accounts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 3.9rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.253);
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #16213E;
+    color: #fff;
+    transition: 0.3s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input {
+    padding: 11px 8px;
+    width: 370px;
+    font-size: 15px;
+    font-family: 'font-default', sans-serif;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205);
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+form button {
+    border: 2px solid #EA1F1F;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'font-bold', sans-serif;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #EA1F1F;
+    color: #fff;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 760px) {
+
+    .account p {
+        display: none;
+    }
+
+    .content {
+        gap: 1.5rem;
+    }
+
+    .input {
+        width: 70vw;
+    }
+
+    .icon {
+        font-size: 3.4rem;
+        padding: 9px;
+    }
+
+}

@@ -4,7 +4,7 @@ import { IoMdDownload } from "react-icons/io";
 
 function AboutMe() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='aboutMe'>
 
             <div className={styles.content}>
                 <div className={styles.picture}>

@@ -9,6 +9,13 @@ function Header() {
         setShowMenu(!showMenu)
     }
 
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id)
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <div className={styles.container}>
 
@@ -16,10 +23,10 @@ function Header() {
                 <img className={styles.logo} src="/assets/AWhite.png" alt="logo" />
 
                 <ul>
-                    <li>Sobre</li>
-                    <li>Tecnologias</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
+                    <li onClick={() => scrollToSection('aboutMe')}>Sobre</li>
+                    <li onClick={() => scrollToSection('technologies')}>Tecnologias</li>
+                    <li onClick={() => scrollToSection('projects')}>Projetos</li>
+                    <li onClick={() => scrollToSection('contact')}>Contato</li>
                 </ul>
 
                 <button onClick={toggleMenu} className={styles.menu_button}><IoMenu className={styles.menu_icon} /></button>
@@ -27,10 +34,10 @@ function Header() {
 
             <div className={`${styles.menu_responsive} ${showMenu ? styles.show : ''}`}>
                 <ul className={styles.menu_responsive_list}>
-                    <li>Sobre</li>
-                    <li>Tecnologias</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
+                    <li onClick={() => scrollToSection('aboutMe')}>Sobre</li>
+                    <li onClick={() => scrollToSection('technologies')}>Tecnologias</li>
+                    <li onClick={() => scrollToSection('projects')}>Projetos</li>
+                    <li onClick={() => scrollToSection('contact')}>Contato</li>
                 </ul>
             </div>
 
