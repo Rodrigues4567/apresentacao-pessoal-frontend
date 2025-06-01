@@ -38,7 +38,7 @@ function Projects() {
                     <SwiperSlide className={styles.swiper_slide}>
                         <div className={styles.card_project}>
                             <CardProject img={'/assets/projeto-pokemon.png'} 
-                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                text={'O projeto Pokemons Page é uma aplicação web interativa que permite aos usuários explorar uma vasta coleção de Pokémon. Utilizando a PokéAPI como fonte de dados, a aplicação oferece funcionalidades como busca por nome, visualização de detalhes individuais de cada Pokémon, incluindo tipos, habilidades e status.'}
                                 urlDeploy={'https://pokemons-page.vercel.app/'} 
                                 urlRepository={'https://github.com/Rodrigues4567/pokemons-page'} 
                             />
@@ -48,7 +48,7 @@ function Projects() {
                     <SwiperSlide className={styles.swiper_slide}>
                         <div className={styles.card_project}>
                             <CardProject img={'/assets/autmobile.jpg'} 
-                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                text={'O projeto Autmobile é um site institucional desenvolvido para uma oficina automotiva fictícia, com o objetivo de apresentar seus serviços, produtos e informações de contato de forma clara e atrativa com foco em design responsivo para garantir uma boa experiência em diferentes dispositivos.'}
                                 urlDeploy={'https://rodrigues4567.github.io/Autmobile/'}
                                 urlRepository={'https://github.com/Rodrigues4567/Autmobile'}
                             />
@@ -58,7 +58,7 @@ function Projects() {
                     <SwiperSlide className={styles.swiper_slide}>
                         <div className={styles.card_project}>
                             <CardProject img={'/assets/e-commerce.png'}
-                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                text={'O projeto Teste E-commerce Avanti é uma loja virtual fictícia desenvolvida para simular a experiência de um e-commerce moderno. O site é responsivo e foca na navegação fluida e na apresentação visual atrativa.'}
                                 urlDeploy={'https://rodrigues4567.github.io/teste-e-commerce-avanti/'}
                                 urlRepository={'https://github.com/Rodrigues4567/teste-e-commerce-avanti'} 
                             />
@@ -68,7 +68,7 @@ function Projects() {
                     <SwiperSlide className={styles.swiper_slide}>
                         <div className={styles.card_project}>
                             <CardProject img={'/assets/Whitepace.jpg'}
-                                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit aliquid magni animi reiciendis odio impedit laboriosam est eligendi officia quos in molestias fugiat ipsa, error aspernatur ea numquam voluptas?'}
+                                text={'O projeto Whitepace é um site institucional fictício que promove serviços de criação de websites, lojas virtuais e blogs para empresas de diversos portes. Com um design moderno e responsivo, a página destaca os benefícios de ter uma presença online profissional, enfatizando a facilidade de implementação e a segurança oferecida.'}
                                 urlDeploy={'https://rodrigues4567.github.io/projeto-whitepace/'}
                                 urlRepository={'https://github.com/Rodrigues4567/projeto-whitepace'} 
                             />    

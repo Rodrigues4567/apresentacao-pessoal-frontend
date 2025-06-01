@@ -13,7 +13,7 @@ function AboutMe() {
 
                 <div className={styles.about}>
                     <h2>Sobre <span>mim</span></h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem praesentium corrupti, accusamus temporibus animi repellat veritatis consectetur ratione recusandae nostrum distinctio, odit molestiae fuga minus nam voluptatibus expedita. Dolore, ipsa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam voluptates illo minima et quidem incidunt eligendi similique molestiae sunt.</p>
+                    <p>Olá, me chamo Allyson Rodrigues Ramalho, sou estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor Front-end apaixonado por tecnologia. Estou sempre em busca de novos desafios para aprimorar minhas habilidades. Já participei de projetos acadêmicos e freelancers, trabalhando com criação de interfaces, consumo de APIs e boas práticas de desenvolvimento. Meu objetivo é transformar ideias em soluções funcionais e de impacto, atuando no mercado de tecnologia e criando soluções que façam a diferença.</p>
                     <a href="/desenvolvedor-web3.0.pdf" download><ButtonRed text={'Download CV'} icon={<IoMdDownload className={styles.button_icon} />} /></a>
                 </div>
             </div>

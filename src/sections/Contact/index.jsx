@@ -26,7 +26,9 @@ function Contact() {
                         <p>/allyson-rodrigues-web</p>
                     </div>
                     <div className={styles.account}>
-                        <MdEmail className={styles.icon} />
+                        <a href="mailto:rodriguesdevv@gmail.com">
+                            <MdEmail className={styles.icon} />
+                        </a>
                         <p>rodriguesdevv@gmail.com</p>
                     </div>
                 </div>
