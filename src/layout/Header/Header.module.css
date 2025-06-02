@@ -1,10 +1,10 @@
 
 .container {
-    position: fixed;     /* Fixa no topo */
-    top: 0;              /* Alinha ao topo */
-    left: 0;             /* Garante que começa do lado esquerdo */
-    width: 100%;         /* Ocupa toda a largura */
-    z-index: 1000;       /* Garante que fique acima dos outros elementos */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     padding: 14px 10px;
     background-color: #16213E;
     border-bottom: 2px solid #EA1F1F;
