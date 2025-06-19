@@ -46,19 +46,19 @@ function Contact() {
 
                 <div className={styles.accounts}>
                     <div className={styles.account}>
-                        <a href="https://github.com/Rodrigues4567">
+                        <a href="https://github.com/Rodrigues4567" target="_blank" rel="noopener noreferrer" >
                             <FaGithub className={styles.icon} />
                         </a>
                         <p>/Rodrigues4567</p>
                     </div>
                     <div className={styles.account}>
-                        <a href="https://www.linkedin.com/in/allyson-rodrigues-web/">
+                        <a href="https://www.linkedin.com/in/allyson-rodrigues-web/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className={styles.icon} />
                         </a>
                         <p>/allyson-rodrigues-web</p>
                     </div>
                     <div className={styles.account}>
-                        <a href="mailto:rodriguesdevv@gmail.com">
+                        <a href="mailto:rodriguesdevv@gmail.com" target="_blank" rel="noopener noreferrer">
                             <MdEmail className={styles.icon} />
                         </a>
                         <p>rodriguesdevv@gmail.com</p>
