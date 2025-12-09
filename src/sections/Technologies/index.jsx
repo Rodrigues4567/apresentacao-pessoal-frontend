@@ -2,7 +2,7 @@ import Card from '../../components/Card'
 import styles from './Technologies.module.css'
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaJava, FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript, BiLogoSpringBoot } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 function Technologies() {
@@ -21,8 +21,8 @@ function Technologies() {
                 <Card icon={<FaReact />} name={'React.js'} />
                 <Card icon={<FaNodeJs />} name={'Node.js'} />
                 <Card icon={<FaJava />} name={'Java'} />
+                <Card icon={<BiLogoSpringBoot />} name={'Spring Boot'} />
                 <Card icon={<RiTailwindCssFill />} name={'Tailwind CSS'} />
-                <Card icon={<FaBootstrap />} name={'Bootstrap'} />
                 <Card icon={<FaGitAlt />} name={'Git'} />
             </div>
 

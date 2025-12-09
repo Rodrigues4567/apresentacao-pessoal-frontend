@@ -1,9 +1,9 @@
 import styles from './ButtonRed.module.css'
 
-function ButtonRed({ url, text, icon }) {
+function ButtonRed({ text, icon }) {
     return (
-        <div>
-            <a href={url} target="_blank"><button className={styles.button_red}>{text} {icon}</button></a>
+        <div className={styles.button_red}>
+            {text} {icon}
         </div>
     )
 }

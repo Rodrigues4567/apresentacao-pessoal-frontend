@@ -11,8 +11,8 @@ function CardProject({ img, text, urlDeploy, urlRepository }) {
                 <img src={img} alt="Projeto" />
                 <p>{text}</p>
                 <div className={styles.buttons}>
-                    <a href={urlDeploy} target='_blank'><ButtonRed text={'Deploy'} icon={<IoIosRocket />} /></a>
-                    <a href={urlRepository} target='_blank'><ButtonRed text={'Repositório'} icon={<FaGithub />} /></a>
+                    <a href={urlDeploy} target='_blank' rel='noopener noreferrer'><ButtonRed text={'Deploy'} icon={<IoIosRocket />} /></a>
+                    <a href={urlRepository} target='_blank' rel='noopener noreferrer'><ButtonRed text={'Repositório'} icon={<FaGithub />} /></a>
                 </div>
             </div>
 

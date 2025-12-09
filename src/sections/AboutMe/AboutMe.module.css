@@ -21,7 +21,7 @@
 }
 
 .about {
-    width: 580px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -35,6 +35,10 @@
 
 .button_icon {
     font-size: 1.4rem;
+}
+
+a {
+    margin-top: 8px;
 }
 
 @media screen and (max-width: 650px) {

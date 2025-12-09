@@ -67,10 +67,10 @@ function Projects() {
 
                     <SwiperSlide className={styles.swiper_slide}>
                         <div className={styles.card_project}>
-                            <CardProject img={'/assets/Whitepace.jpg'}
-                                text={'O projeto Whitepace é um site institucional fictício que promove serviços de criação de websites, lojas virtuais e blogs para empresas de diversos portes. Com um design moderno e responsivo, a página destaca os benefícios de ter uma presença online profissional, enfatizando a facilidade de implementação e a segurança oferecida.'}
-                                urlDeploy={'https://rodrigues4567.github.io/projeto-whitepace/'}
-                                urlRepository={'https://github.com/Rodrigues4567/projeto-whitepace'} 
+                            <CardProject img={'/assets/galeria-imagens.png'}
+                                text={'Uma galeria de imagens desenvolvida em React + Vite, consumindo a API Picsum Photos. A aplicação permite navegar pelas imagens, marcar favoritos, visualizar detalhes e é totalmente responsiva.'}
+                                urlDeploy={'https://desafio-galeria-de-imagem-frontendf-three.vercel.app/'}
+                                urlRepository={'https://github.com/Rodrigues4567/desafio-galeria-de-imagem-frontendfusion/'} 
                             />    
                         </div>
                     </SwiperSlide>
