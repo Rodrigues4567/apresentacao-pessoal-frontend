@@ -1,38 +1,38 @@
-import { useRef } from 'react';
 import styles from './Contact.module.css';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import emailjs from 'emailjs-com';
+import { useForm } from 'react-hook-form';
 
 function Contact() {
 
-    const form = useRef()
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors, isSubmitting }
+    } = useForm();
 
-    function sendEmail(e) {
-        e.preventDefault()
+    async function onSubmit(data) {
+        try {
+            await emailjs.send(
+                'service_grb8bfk',
+                'template_7v8oo29',
+                {
+                    user_name: data.user_name,
+                    user_email: data.user_email,
+                    user_message: data.user_message,
+                },
+                'yxaFzJ7TC7WmU19ct'
+            );
 
-        const name = form.current.user_name.value.trim();
-        const email = form.current.user_email.value.trim();
-        const message = form.current.user_message.value.trim();
-
-        if (!name || !email || !message) {
-            alert("Por favor, preencha todos os campos.");
-            return;
+            alert('Mensagem enviada com sucesso!');
+            reset(); // limpa o formulário
         }
-
-        emailjs.sendForm(
-            'service_grb8bfk',
-            'template_7v8oo29',
-            form.current,
-            'yxaFzJ7TC7WmU19ct'
-        )
-        .then(() => {
-            alert('Mensagem enviada com sucesso!')
-        },
-        (err) => {
-            console.log(err.text)
-            alert("Erro ao enviar. Tente novamente.")
-        })
+        catch (err) {
+            console.log(err);
+            alert('Erro ao enviar. Tente novamente.');
+        }
     }
 
     return (
@@ -46,13 +46,13 @@ function Contact() {
 
                 <div className={styles.accounts}>
                     <div className={styles.account}>
-                        <a href="https://github.com/Rodrigues4567">
+                        <a href="https://github.com/Rodrigues4567" target="_blank" rel="noreferrer">
                             <FaGithub className={styles.icon} />
                         </a>
                         <p>/Rodrigues4567</p>
                     </div>
                     <div className={styles.account}>
-                        <a href="https://www.linkedin.com/in/allyson-rodrigues-web/">
+                        <a href="https://www.linkedin.com/in/allyson-rodrigues-web/" target="_blank" rel="noreferrer">
                             <FaLinkedin className={styles.icon} />
                         </a>
                         <p>/allyson-rodrigues-web</p>
@@ -65,20 +65,75 @@ function Contact() {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail}>
-                    <input className={styles.input} type="text" name='user_name' id="user_name" placeholder='Seu nome' required />
+                <form onSubmit={handleSubmit(onSubmit)} noValidate>
 
-                    <input className={styles.input} type="email" name='user_email' id="user_email" placeholder='Seu E-mail' required />
+                    {/* NOME */}
+                    <input
+                        className={styles.input}
+                        type="text"
+                        id="user_name"
+                        placeholder="Seu nome"
+                        {...register('user_name', {
+                            required: 'O nome é obrigatório.',
+                            minLength: {
+                                value: 3,
+                                message: 'O nome deve ter pelo menos 3 caracteres.'
+                            }
+                        })}
+                    />
+                    {errors.user_name && (
+                        <span className={styles.error}>{errors.user_name.message}</span>
+                    )}
 
-                    <textarea className={styles.input} name='user_message' id="user_message" placeholder='Sua mensagem' required ></textarea>
+                    {/* EMAIL */}
+                    <input
+                        className={styles.input}
+                        type="email"
+                        id="user_email"
+                        placeholder="Seu e-mail"
+                        {...register('user_email', {
+                            required: 'O e-mail é obrigatório.',
+                            pattern: {
+                                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                message: 'Digite um e-mail válido.'
+                            }
+                        })}
+                    />
+                    {errors.user_email && (
+                        <span className={styles.error}>{errors.user_email.message}</span>
+                    )}
 
-                    <button type="submit">Enviar_</button>
+                    {/* MENSAGEM */}
+                    <textarea
+                        className={styles.input}
+                        id="user_message"
+                        placeholder="Sua mensagem"
+                        rows={4}
+                        {...register('user_message', {
+                            required: 'A mensagem é obrigatória.',
+                            minLength: {
+                                value: 10,
+                                message: 'A mensagem deve ter pelo menos 10 caracteres.'
+                            },
+                            maxLength: {
+                                value: 1000,
+                                message: 'A mensagem pode ter no máximo 1000 caracteres.'
+                            }
+                        })}
+                    />
+                    {errors.user_message && (
+                        <span className={styles.error}>{errors.user_message.message}</span>
+                    )}
+
+                    <button type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? 'Enviando...' : 'Enviar_'}
+                    </button>
                 </form>
 
             </div>
 
         </div>
-    )
+    );
 }
 
-export default Contact
+export default Contact;
